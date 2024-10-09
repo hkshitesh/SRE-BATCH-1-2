@@ -1,13 +1,9 @@
 sudo su
 
-wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+sudo yum update -y
 
-yum install  epel-release-latest-7.noarch.rpm
+sudo amazon-linux-extras enable ansible2
 
-yum update -y
-
-yum install git python python-pip openssl -y
-
-yum install ansible
+sudo yum install ansible -y
 
 ansible --version
