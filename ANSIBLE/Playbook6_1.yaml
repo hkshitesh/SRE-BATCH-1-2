@@ -1,0 +1,11 @@
+---
+- hosts: devops
+  user: sre
+  become: yes
+  connection: ssh
+
+  tasks:
+    - name: Install httpd on RedHat Family
+      command: yum install httpd -y      
+    - name: Install httpd on Debian Linux Family
+      command: apt-get install apache2 -y
