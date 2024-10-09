@@ -1,6 +1,6 @@
 ---
-- hosts: gfg
-  user: ansible
+- hosts: devops
+  user: sre
   become: yes
   connection: ssh
   gather_facts: yes
